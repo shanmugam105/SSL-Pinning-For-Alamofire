@@ -3,27 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04A051712711BCF20073E237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051702711BCF20073E237 /* AppDelegate.swift */; };
 		04A051732711BCF20073E237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051722711BCF20073E237 /* SceneDelegate.swift */; };
-		04A051752711BCF20073E237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051742711BCF20073E237 /* ViewController.swift */; };
-		04A051782711BCF20073E237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A051762711BCF20073E237 /* Main.storyboard */; };
 		04A0517A2711BCF40073E237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A051792711BCF40073E237 /* Assets.xcassets */; };
 		04A0517D2711BCF40073E237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A0517B2711BCF40073E237 /* LaunchScreen.storyboard */; };
+		04A0518F2711BDE40073E237 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0518E2711BDE40073E237 /* UserListViewController.swift */; };
+		04A051972711BDF40073E237 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051922711BDF40073E237 /* NetworkService.swift */; };
+		04A051992711BDF40073E237 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051942711BDF40073E237 /* Route.swift */; };
+		04A0519B2711BDF40073E237 /* LocalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051962711BDF40073E237 /* LocalErrors.swift */; };
+		04A051A12711BE0B0073E237 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0519D2711BE0B0073E237 /* UsersViewModel.swift */; };
+		04A051A22711BE0B0073E237 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0519F2711BE0B0073E237 /* User.swift */; };
+		04A051A32711BE0B0073E237 /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051A02711BE0B0073E237 /* PostDetail.swift */; };
+		04A051A52711BE4E0073E237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A051A42711BE4E0073E237 /* Main.storyboard */; };
+		04A051A82711BE810073E237 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051A72711BE810073E237 /* UIViewController+Extension.swift */; };
+		04A051B02711ED6B0073E237 /* typicode.leaf.cer in Resources */ = {isa = PBXBuildFile; fileRef = 04A051AF2711ED6B0073E237 /* typicode.leaf.cer */; };
+		987314E60263114D2676A227 /* Pods_SSL_Pinning_For_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6BCD6E8C381DFA953BE19C /* Pods_SSL_Pinning_For_Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04A0516D2711BCF20073E237 /* SSL-Pinning-For-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSL-Pinning-For-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A051702711BCF20073E237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A051722711BCF20073E237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04A051742711BCF20073E237 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04A051772711BCF20073E237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A051792711BCF40073E237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A0517C2711BCF40073E237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A0517E2711BCF40073E237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A0518E2711BDE40073E237 /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		04A051922711BDF40073E237 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		04A051942711BDF40073E237 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		04A051962711BDF40073E237 /* LocalErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalErrors.swift; sourceTree = "<group>"; };
+		04A0519D2711BE0B0073E237 /* UsersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		04A0519F2711BE0B0073E237 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04A051A02711BE0B0073E237 /* PostDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		04A051A42711BE4E0073E237 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04A051A72711BE810073E237 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		04A051AF2711ED6B0073E237 /* typicode.leaf.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = typicode.leaf.cer; sourceTree = "<group>"; };
+		281104940A1FA5A73C0FB98A /* Pods-SSL-Pinning-For-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSL-Pinning-For-Alamofire.release.xcconfig"; path = "Target Support Files/Pods-SSL-Pinning-For-Alamofire/Pods-SSL-Pinning-For-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
+		4E6BCD6E8C381DFA953BE19C /* Pods_SSL_Pinning_For_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSL_Pinning_For_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4529F95697C5219A43E6C56 /* Pods-SSL-Pinning-For-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSL-Pinning-For-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-SSL-Pinning-For-Alamofire/Pods-SSL-Pinning-For-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987314E60263114D2676A227 /* Pods_SSL_Pinning_For_Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,8 @@
 			children = (
 				04A0516F2711BCF20073E237 /* SSL-Pinning-For-Alamofire */,
 				04A0516E2711BCF20073E237 /* Products */,
+				7E720FD96B5FB518EEFCCAE3 /* Pods */,
+				2D3218E6315568D48BEB2CF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,112 @@
 		04A0516F2711BCF20073E237 /* SSL-Pinning-For-Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				04A051A62711BE810073E237 /* Extension */,
+				04A051842711BD1C0073E237 /* Delegate */,
+				04A051902711BDF40073E237 /* Service */,
+				04A0519E2711BE0B0073E237 /* Model */,
+				04A0519C2711BE0B0073E237 /* ViewModel */,
+				04A051862711BD3F0073E237 /* Controller */,
+				04A051872711BD500073E237 /* Storyboard */,
+				04A051852711BD300073E237 /* Global */,
+			);
+			path = "SSL-Pinning-For-Alamofire";
+			sourceTree = "<group>";
+		};
+		04A051842711BD1C0073E237 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
 				04A051702711BCF20073E237 /* AppDelegate.swift */,
 				04A051722711BCF20073E237 /* SceneDelegate.swift */,
-				04A051742711BCF20073E237 /* ViewController.swift */,
-				04A051762711BCF20073E237 /* Main.storyboard */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		04A051852711BD300073E237 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				04A051AF2711ED6B0073E237 /* typicode.leaf.cer */,
 				04A051792711BCF40073E237 /* Assets.xcassets */,
 				04A0517B2711BCF40073E237 /* LaunchScreen.storyboard */,
 				04A0517E2711BCF40073E237 /* Info.plist */,
 			);
-			path = "SSL-Pinning-For-Alamofire";
+			path = Global;
+			sourceTree = "<group>";
+		};
+		04A051862711BD3F0073E237 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04A0518E2711BDE40073E237 /* UserListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04A051872711BD500073E237 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				04A051A42711BE4E0073E237 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		04A051902711BDF40073E237 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04A051912711BDF40073E237 /* Network Service */,
+				04A051962711BDF40073E237 /* LocalErrors.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04A051912711BDF40073E237 /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				04A051922711BDF40073E237 /* NetworkService.swift */,
+				04A051942711BDF40073E237 /* Route.swift */,
+			);
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		04A0519C2711BE0B0073E237 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A0519D2711BE0B0073E237 /* UsersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04A0519E2711BE0B0073E237 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A0519F2711BE0B0073E237 /* User.swift */,
+				04A051A02711BE0B0073E237 /* PostDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A051A62711BE810073E237 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04A051A72711BE810073E237 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2D3218E6315568D48BEB2CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E6BCD6E8C381DFA953BE19C /* Pods_SSL_Pinning_For_Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E720FD96B5FB518EEFCCAE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4529F95697C5219A43E6C56 /* Pods-SSL-Pinning-For-Alamofire.debug.xcconfig */,
+				281104940A1FA5A73C0FB98A /* Pods-SSL-Pinning-For-Alamofire.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A051812711BCF40073E237 /* Build configuration list for PBXNativeTarget "SSL-Pinning-For-Alamofire" */;
 			buildPhases = (
+				1C454E9D6B73F88C4346F526 /* [CP] Check Pods Manifest.lock */,
 				04A051692711BCF20073E237 /* Sources */,
 				04A0516A2711BCF20073E237 /* Frameworks */,
 				04A0516B2711BCF20073E237 /* Resources */,
+				04B43C0E59D7D859C062C410 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +246,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A051B02711ED6B0073E237 /* typicode.leaf.cer in Resources */,
 				04A0517D2711BCF40073E237 /* LaunchScreen.storyboard in Resources */,
 				04A0517A2711BCF40073E237 /* Assets.xcassets in Resources */,
-				04A051782711BCF20073E237 /* Main.storyboard in Resources */,
+				04A051A52711BE4E0073E237 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04B43C0E59D7D859C062C410 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSL-Pinning-For-Alamofire/Pods-SSL-Pinning-For-Alamofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSL-Pinning-For-Alamofire/Pods-SSL-Pinning-For-Alamofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSL-Pinning-For-Alamofire/Pods-SSL-Pinning-For-Alamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C454E9D6B73F88C4346F526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSL-Pinning-For-Alamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04A051692711BCF20073E237 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A051752711BCF20073E237 /* ViewController.swift in Sources */,
+				04A051A82711BE810073E237 /* UIViewController+Extension.swift in Sources */,
+				04A051972711BDF40073E237 /* NetworkService.swift in Sources */,
+				04A051A32711BE0B0073E237 /* PostDetail.swift in Sources */,
+				04A0518F2711BDE40073E237 /* UserListViewController.swift in Sources */,
+				04A0519B2711BDF40073E237 /* LocalErrors.swift in Sources */,
 				04A051712711BCF20073E237 /* AppDelegate.swift in Sources */,
+				04A051992711BDF40073E237 /* Route.swift in Sources */,
 				04A051732711BCF20073E237 /* SceneDelegate.swift in Sources */,
+				04A051A12711BE0B0073E237 /* UsersViewModel.swift in Sources */,
+				04A051A22711BE0B0073E237 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04A051762711BCF20073E237 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04A051772711BCF20073E237 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04A0517B2711BCF40073E237 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,11 +447,13 @@
 		};
 		04A051822711BCF40073E237 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4529F95697C5219A43E6C56 /* Pods-SSL-Pinning-For-Alamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SSL-Pinning-For-Alamofire/Info.plist";
+				INFOPLIST_FILE = "SSL-Pinning-For-Alamofire/Global/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,17 +461,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.SSL-Pinning-For-Alamofire";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		04A051832711BCF40073E237 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281104940A1FA5A73C0FB98A /* Pods-SSL-Pinning-For-Alamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SSL-Pinning-For-Alamofire/Info.plist";
+				INFOPLIST_FILE = "SSL-Pinning-For-Alamofire/Global/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.SSL-Pinning-For-Alamofire";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
