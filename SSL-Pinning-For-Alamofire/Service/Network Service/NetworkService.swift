@@ -12,29 +12,33 @@ import Alamofire
 
 final class NetworkService {
     static let shared = NetworkService()
-    private lazy var manager: Session = {
+    private lazy var manager: SessionManager = {
         let configuration: URLSessionConfiguration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30
         let pinningUrl = URL(string: Route.baseURL)?.host ?? ""
-        let evaluators: [String: ServerTrustEvaluating] = [
-            // pinningUrl: PinnedCertificatesTrustEvaluator(),
-            pinningUrl: PublicKeysTrustEvaluator(),
-            // pinningUrl: DefaultTrustEvaluator(),
-            // pinningUrl: RevocationTrustEvaluator(),
+        let evaluators: [String: ServerTrustPolicy] = [
+            pinningUrl: .pinCertificates(certificates: ServerTrustPolicy.certificates(),
+                                         validateCertificateChain: true,
+                                         validateHost: true),
+            // pinningUrl: .pinPublicKeys(publicKeys: ServerTrustPolicy.publicKeys(),
+            //                            validateCertificateChain: true,
+            //                            validateHost: true),
+            // pinningUrl: .performDefaultEvaluation(validateHost: true),
+            // pinningUrl: .performRevokedEvaluation(validateHost: true, revocationFlags: ),
         ]
-        let serverTrustManager = ServerTrustManager(allHostsMustBeEvaluated: true, evaluators: evaluators)
-        return Session(configuration: configuration, serverTrustManager: serverTrustManager)
+        let serverTrustManager = ServerTrustPolicyManager(policies: evaluators)
+        return SessionManager(configuration: configuration, serverTrustPolicyManager: serverTrustManager)
     }()
     
     private init() {}
     
     // MARK:- Get User List
-    func makeRequestForUserList(completion: @escaping (Result<[User], Error>) -> Void) {
+    func makeRequestForUserList(completion: @escaping (Swift.Result<[User], Error>) -> Void) {
         request(route: .user, type: [User].self,completion: completion)
     }
     
     // MARK:- Get User's Blog Post Details
-    func makeRequestForUserBlogPost(parameter: [String: Any]?, completion: @escaping (Result<PostDetail, Error>) -> Void) {
+    func makeRequestForUserBlogPost(parameter: [String: Any]?, completion: @escaping (Swift.Result<PostDetail, Error>) -> Void) {
         request(route: .posts, method: .post, parameter: parameter, type: PostDetail.self,completion: completion)
     }
     
@@ -42,7 +46,7 @@ final class NetworkService {
                                      method: HTTPMethod = .get,
                                      parameter: [String: Any]? = nil,
                                      type: T.Type,
-                                     completion: @escaping (Result<T, Error>) -> Void) {
+                                     completion: @escaping (Swift.Result<T, Error>) -> Void) {
         guard let request = createRequest(route: route, method: method, parameter: parameter) else {
             completion(.failure(ValidationError.unknownError))
             return
