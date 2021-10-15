@@ -3,5 +3,5 @@
 use_frameworks!
 
 target 'SSL-Pinning-For-Alamofire' do
-  pod 'Alamofire', '~> 5.4'
+  pod 'Alamofire', '~> 4'
 end

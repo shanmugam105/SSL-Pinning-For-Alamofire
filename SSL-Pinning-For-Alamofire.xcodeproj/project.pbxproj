@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0490FC89271939F800CFEDFD /* sni.cloudflaressl.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 0490FC88271939F800CFEDFD /* sni.cloudflaressl.com.cer */; };
+		0490FC8B2719432900CFEDFD /* typicode.der in Resources */ = {isa = PBXBuildFile; fileRef = 0490FC8A2719432900CFEDFD /* typicode.der */; };
 		04A051712711BCF20073E237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051702711BCF20073E237 /* AppDelegate.swift */; };
 		04A051732711BCF20073E237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051722711BCF20073E237 /* SceneDelegate.swift */; };
 		04A0517A2711BCF40073E237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A051792711BCF40073E237 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0490FC88271939F800CFEDFD /* sni.cloudflaressl.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = sni.cloudflaressl.com.cer; sourceTree = "<group>"; };
+		0490FC8A2719432900CFEDFD /* typicode.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = typicode.der; sourceTree = "<group>"; };
 		04A0516D2711BCF20073E237 /* SSL-Pinning-For-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSL-Pinning-For-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A051702711BCF20073E237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A051722711BCF20073E237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		04A051852711BD300073E237 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				0490FC8A2719432900CFEDFD /* typicode.der */,
+				0490FC88271939F800CFEDFD /* sni.cloudflaressl.com.cer */,
 				04A051792711BCF40073E237 /* Assets.xcassets */,
 				04A0517B2711BCF40073E237 /* LaunchScreen.storyboard */,
 				04A0517E2711BCF40073E237 /* Info.plist */,
@@ -243,7 +249,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0490FC8B2719432900CFEDFD /* typicode.der in Resources */,
 				04A0517D2711BCF40073E237 /* LaunchScreen.storyboard in Resources */,
+				0490FC89271939F800CFEDFD /* sni.cloudflaressl.com.cer in Resources */,
 				04A0517A2711BCF40073E237 /* Assets.xcassets in Resources */,
 				04A051A52711BE4E0073E237 /* Main.storyboard in Resources */,
 			);
