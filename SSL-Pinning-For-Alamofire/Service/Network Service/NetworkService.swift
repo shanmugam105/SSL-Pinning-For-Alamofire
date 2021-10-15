@@ -58,12 +58,12 @@ final class NetworkService {
             }
         }
     }
-    /// This function helps to create URLRequest
+    /// This function helps to create DataRequest
     /// - Parameters:
     ///   - route: Backend resource path
     ///   - method: Type of HTTP Request
     ///   - parameter: Need to pass to backend
-    /// - Returns: It returns URLRequest
+    /// - Returns: It returns DataRequest
     private func createRequest(route: Route,
                                method: HTTPMethod = .get,
                                parameter: [String: Any]? = nil) -> DataRequest? {

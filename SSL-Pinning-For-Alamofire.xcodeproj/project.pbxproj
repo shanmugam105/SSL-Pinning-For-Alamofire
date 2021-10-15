@@ -20,7 +20,6 @@
 		04A051A32711BE0B0073E237 /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051A02711BE0B0073E237 /* PostDetail.swift */; };
 		04A051A52711BE4E0073E237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A051A42711BE4E0073E237 /* Main.storyboard */; };
 		04A051A82711BE810073E237 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051A72711BE810073E237 /* UIViewController+Extension.swift */; };
-		04A051B02711ED6B0073E237 /* typicode.leaf.cer in Resources */ = {isa = PBXBuildFile; fileRef = 04A051AF2711ED6B0073E237 /* typicode.leaf.cer */; };
 		987314E60263114D2676A227 /* Pods_SSL_Pinning_For_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6BCD6E8C381DFA953BE19C /* Pods_SSL_Pinning_For_Alamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		04A051A02711BE0B0073E237 /* PostDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
 		04A051A42711BE4E0073E237 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04A051A72711BE810073E237 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		04A051AF2711ED6B0073E237 /* typicode.leaf.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = typicode.leaf.cer; sourceTree = "<group>"; };
 		281104940A1FA5A73C0FB98A /* Pods-SSL-Pinning-For-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSL-Pinning-For-Alamofire.release.xcconfig"; path = "Target Support Files/Pods-SSL-Pinning-For-Alamofire/Pods-SSL-Pinning-For-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
 		4E6BCD6E8C381DFA953BE19C /* Pods_SSL_Pinning_For_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSL_Pinning_For_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4529F95697C5219A43E6C56 /* Pods-SSL-Pinning-For-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSL-Pinning-For-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-SSL-Pinning-For-Alamofire/Pods-SSL-Pinning-For-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 		04A051852711BD300073E237 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				04A051AF2711ED6B0073E237 /* typicode.leaf.cer */,
 				04A051792711BCF40073E237 /* Assets.xcassets */,
 				04A0517B2711BCF40073E237 /* LaunchScreen.storyboard */,
 				04A0517E2711BCF40073E237 /* Info.plist */,
@@ -246,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A051B02711ED6B0073E237 /* typicode.leaf.cer in Resources */,
 				04A0517D2711BCF40073E237 /* LaunchScreen.storyboard in Resources */,
 				04A0517A2711BCF40073E237 /* Assets.xcassets in Resources */,
 				04A051A52711BE4E0073E237 /* Main.storyboard in Resources */,
