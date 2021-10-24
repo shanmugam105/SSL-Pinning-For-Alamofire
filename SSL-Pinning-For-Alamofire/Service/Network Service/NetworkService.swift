@@ -10,6 +10,18 @@ import Foundation
 import CommonCrypto
 import Alamofire
 
+extension NetworkService {
+    // MARK:- Get User List
+    func makeRequestForUserList(completion: @escaping (Swift.Result<[User], Error>) -> Void) {
+        request(route: .user, type: [User].self,completion: completion)
+    }
+    
+    // MARK:- Get User's Blog Post Details
+    func makeRequestForUserBlogPost(parameter: [String: Any]?, completion: @escaping (Swift.Result<PostDetail, Error>) -> Void) {
+        request(route: .posts, method: .post, parameter: parameter, type: PostDetail.self,completion: completion)
+    }
+}
+
 final class NetworkService {
     static let shared = NetworkService()
     private lazy var manager: SessionManager = {
@@ -31,16 +43,6 @@ final class NetworkService {
     }()
     
     private init() {}
-    
-    // MARK:- Get User List
-    func makeRequestForUserList(completion: @escaping (Swift.Result<[User], Error>) -> Void) {
-        request(route: .user, type: [User].self,completion: completion)
-    }
-    
-    // MARK:- Get User's Blog Post Details
-    func makeRequestForUserBlogPost(parameter: [String: Any]?, completion: @escaping (Swift.Result<PostDetail, Error>) -> Void) {
-        request(route: .posts, method: .post, parameter: parameter, type: PostDetail.self,completion: completion)
-    }
     
     private func request<T: Codable>(route: Route,
                                      method: HTTPMethod = .get,
